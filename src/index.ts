@@ -1,5 +1,5 @@
 export {ITimeService} from './interfaces/ITimeService.js'
-export {NormalTimeService} from './NormalTimeService'
+export {NormalTimeService} from './NormalTimeService.js'
 export {ErrorTimeService} from './ErrorTimeService.js'
 export {SpeedyTimeService} from './SpeedyTimeService.js'
 export {StaticTimeService} from './StaticTimeService.js'
