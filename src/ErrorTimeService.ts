@@ -4,7 +4,7 @@ import {
   ErrorClearTimeoutStrategy,
   ErrorCurrentTimeStrategy,
   ErrorSetTimeoutStrategy,
-} from './strategies/ErrorStrategies'
+} from './strategies/ErrorStrategies.js'
 
 export class ErrorTimeService extends GenericTimeService implements ITimeService {
   constructor(errMsg: string = 'No date available from ErrorTimeService') {
