@@ -1,7 +1,7 @@
 # js-time-service 
 > AKA `@martin-hughes/time-service`
 
-Classes that allow the developer to manipulate time with wrapped versions of `setTimeout` and `setInterval`.
+Classes that allow the developer to manipulate time with wrapped versions of `setTimeout` and (later) `setInterval`.
 
 I'll be up front in saying this is an immature package, and that I'm still relatively new to both TS and publishing
 packages - so if you see anything that's not idiomatic or good practice, please say so.
@@ -45,8 +45,8 @@ On the other hand, why might you *not* want to use wrappers?
 Largely because the native `Date` is a hot mess. This package came out of another (private) project of mine that used
 luxon extensively, so it uses a luxon-first philosophy.
 
-As for "why luxon instead of <insert favorite time package>?" - that's kind of arbitrary, but it's because it seems to
-be the best time/date manipulation package available for what **I, personally,** need to do.
+As for "why luxon instead of &lt;insert favorite time package&gt;?" - that's kind of arbitrary, but it's because it 
+seems to be the best time/date manipulation package available for what **I, personally,** need to do.
 
 ## Examples
 
@@ -62,6 +62,8 @@ ts.setTimout(() => {console.log('Timeout after 10 seconds!'), 10000})
 ```
 
 What about speeding up time a bit? Personally I like this for a demo-mode of something that normally runs in real-time.
+
+> This isn't actually implemented yet... Coming soon!
 
 ```javascript
 import {SpeedyTimeService} from '@martin-hughes/time-service'
